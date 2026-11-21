@@ -1,0 +1,61 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+  --font-gupter: "Gupter", serif;
+  --font-roboto-condensed: "Roboto Condensed", sans-serif;
+
+  /* COLORS */
+
+  --tb-primary-500: rgba(27, 27, 27, 1);
+  --super-light-gray: rgb(244, 244, 244);
+}
+
+.site-header-wrapper {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background-color: white;
+    border-bottom: 0.5px solid gray;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 1.5rem 6rem 1.2rem;
+}  
+
+#icon-logo {
+    display: flex;
+    align-items: center;
+}
+
+#icon-logo img {
+    height: 60px;
+    width: auto;
+    display: block;
+}
+
+.nav-links {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 3.5rem;
+}
+
+.nav-label {
+    text-transform: uppercase;
+    font-family: var(--font-roboto-condensed);
+    font-weight: 350;
+    text-decoration: none;
+    color: #111;
+    font-size: 1rem;
+    transition: opacity 0.2s ease;
+}
+
+.nav-label:hover {
+    opacity: 0.6;
+}

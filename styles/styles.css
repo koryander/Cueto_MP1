@@ -1,0 +1,230 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+  --font-gupter: "Gupter", serif;
+  --font-roboto-condensed: "Roboto Condensed", sans-serif;
+
+  /* COLORS */
+
+  --tb-primary-500: rgba(27, 27, 27, 1);
+  --super-light-gray: rgb(244, 244, 244);
+  --maroon: rgb(72, 23, 23);
+}
+
+#hero-wrapper {
+  background: 
+        linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), 
+        url("../photos/index/hero_banner.webp") no-repeat center center / cover;
+  width: 100%;
+  aspect-ratio: 1920 / 800;
+}
+
+.hero-content-wrapper {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.hero-content-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  height: 100%;
+  width: 65%;
+  height: 100%;
+  padding: 8rem;
+  gap: 1rem;
+}
+
+#hero-title h1 {
+  text-transform: uppercase;
+  color: white;
+  font-family: var(--font-gupter);
+  font-weight: 900;
+  font-size: 2rem;
+
+}
+
+.hero-text {
+  width: 60%;
+}
+
+.hero-text p {
+  color: white;
+  font-family: var(--font-gupter);
+  font-weight: 350;
+  line-height: 1.5rem;
+  font-size: 1.2rem;
+  text-align: justify;
+
+}
+
+.hero-links {
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+  width: 60%;
+  gap: 1rem;
+  padding-top: 5px;
+}
+
+.hero-links a {
+  text-transform: uppercase;
+  text-decoration: none;
+  border: 1px solid white;
+  color: white;
+  font-family: var(--font-roboto-condensed);
+  font-size: 0.8rem;
+  font-weight: 300  ;
+  padding: 0.7rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 27%;
+  border-radius: 100px;
+  transition: background-color 0.25s ease;
+}
+
+.hero-links a:hover {
+  background-color: white;
+  color: var(--maroon);
+}
+
+.featured-wrapper {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  padding: 3rem 0rem 3rem;
+  gap: 2rem;
+}
+
+.brand-info {
+  display: flex;
+  flex-direction: column;
+  width: 75%;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+}
+
+.brand-info h2 {
+  text-transform: uppercase;
+  color: black;
+  font-family: var(--font-roboto-condensed);
+  font-weight: 375;
+  letter-spacing: 1px;
+  font-size: 1.45rem;
+}
+
+.brand-info p {
+  color: rgb(97, 97, 97);
+  width: 75%;
+  text-align: center;
+  font-size: 1rem;
+  font-family: var(--font-gupter);
+  font-weight: 300;
+  line-height: 1.3rem;
+}
+
+.brand-info-text {
+  padding: 0.5rem;
+}
+
+#how-we-work {
+  padding-bottom: 0;
+}
+
+.how-we-work-photos {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.how-we-work-photos img {
+  aspect-ratio: 1 / 1;
+  width: 19.75%;
+}
+
+.shoes-link-wrapper {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.shoes-link-container {
+  width: 37.5%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.shoes-link-container img {
+  width: 100%;
+} 
+
+.shoes-link-container a {
+  text-decoration: none;
+  transition: opacity 0.5s ease;
+}
+
+.shoes-link-container a:hover {
+  opacity: 0.8;
+}
+
+.shoes-link-container h3 {
+  font-family: var(--font-roboto-condensed);
+  text-align: center;
+  color: black;
+  font-weight: 375;
+  font-size: 1.25rem;
+  text-transform: uppercase;
+  padding: 1rem 0rem 1rem;
+  transition: opacity 0.5s ease;
+}
+
+.boots-banner {
+  background-image: url(https://www.carminashoemaker.com/cdnassets/banner_cordovan_alfabia-tab.webp);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  width: 100%;
+  aspect-ratio: 1200 / 400;
+}
+
+.boots-info-wrapper {
+  width: 50%;
+}
+
+.boots-overline span {
+  color: white;
+  font-family: var(--font-roboto-condensed);
+  text-transform: uppercase;
+  font-weight: 325;
+  font-size: 0.95rem;
+}
+
+.boots-tagline {
+  width: 50%;
+}
+
+.boots-tagline span {
+  color: white;
+  font-family: var(--font-gupter);
+  font-size: 1.75rem;
+  font-style: italic;
+  letter-spacing: 0.75px;
+}
